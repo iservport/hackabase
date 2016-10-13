@@ -6,11 +6,11 @@ lazy val root = (project in file("."))
   .enablePlugins(DockerPlugin)
   .settings(
     name := "hackabase",
-    version := "1.0.2.RELEASE",
+    version := "1.0.3.RELEASE",
     mainClass in (Compile) := Some("org.helianto.hackabase.Application"),
     dockerBaseImage := "azul/zulu-openjdk:8",
     dockerUpdateLatest := true,
-    dockerExposedPorts := Seq(9000),
+    dockerExposedPorts := Seq(8088),
     dockerExposedVolumes := Seq("/opt/data"),
     dockerRepository := Some("iservport"),
     libraryDependencies ++= Seq(
