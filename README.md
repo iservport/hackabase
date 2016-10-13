@@ -1,6 +1,10 @@
 # hackabase
 Free startup project database
 
+You can run this project with docker: 
+
+    docker run -d -p 8088:8080 iservport/hackabase:latest
+
 API basics:
 
   A list of projects: GET /api/project
